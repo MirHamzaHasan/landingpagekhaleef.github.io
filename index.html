@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>PSL - Live Streaming and Highlights</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css"
+    href="http://cric.sa.zain.com/digital/assets/promo/new_promo/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="http://cric.sa.zain.com/digital/assets/promo/new_promo/images/cw_favIco-01.png" sizes="any">
+  <!--===============================================================================================-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="http://cric.sa.zain.com/digital/assets/promo/new_promo/vendor/select2/select2.min.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
+  <!--===============================================================================================-->
+  <!-- <link rel="stylesheet" type="text/css" href="http://cric.sa.zain.com/digital/assets/promo/new_promo/css/main.css?123123"> -->
+  <link rel="stylesheet" type="text/css" href="main2.css">
+  <!--===============================================================================================-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- Demo -->
+
+  <style>
+    .hidden {
+      display: none !important;
+    }
+  </style>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-88034149-6', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Ads: 954997075 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-954997075"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-954997075');
+  </script>
+  <!-- Event snippet for Cricwick Subscription conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion() {
+      var callback = function () {
+        success2();
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-954997075/biBTCLu6yHkQ07KwxwM',
+        'transaction_id': '',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+
+  <script type="text/javascript">
+    // GLOBALS
+    var already_subscribed = "";
+    var pin_sent = "0";
+    var base_url = "http://cric.sa.zain.com";
+    var msisdn = "";
+    var visitor_id = "0";
+    var operator = "";
+    var ag = "";
+    var ea = "NoHeader";
+    if (msisdn) {
+      ea = "Header";
+      ga('send', 'event', 'HE', ea, msisdn, 1);
+    } else {
+      ga('send', 'event', 'NO-HE', ea, msisdn, 1);
+    }
+
+  </script>
+</head>
+
+<body>
+
+
+  <div class="container-contact100">
+    <div class="wrap-contact100">
+      <div class="header">
+        <!-- <img src="http://cric.sa.zain.comassets/promo/images/logo.png" alt="" class="logo"> -->
+        <div class="livestreaming">
+          <ul class="text-center">
+            <!-- <li class="hilight"> Access <span style="text-transform: uppercase;">exclusive</span> </li> -->
+            <!-- <li class="livestream">Watch<span style="text-transform: uppercase;color:#ff3333"> Live </span><span style="text-transform: uppercase;">HD Streaming &amp; Highlights</span></li> -->
+            <!-- <li class="inmatch"><span style="font-weight: 300;">And</span> Highlights </li> -->
+          </ul>
+        </div>
+        <!-- <img src="http://cric.sa.zain.com/digital/userapi/assets/promo/new_promo/images/logo-zain.png" alt="" class="logo-zain"> -->
+        <!-- <img src="http://cric.sa.zain.com/digital/userapi/assets/promo/new_promo/images/video/grf1.png" alt=""
+						style="position:absolute;z-index: 25;"> -->
+        <!-- <img src="http://cric.sa.zain.com/digital/userapi/assets/promo/new_promo/images/video/logo-cwc.png" alt="" class="logo-cwc"> -->
+        <!-- <img src="slides-cover.png" alt="" class="main-image-overlay" /> -->
+
+
+        <div class="clearfix" style="text-align:center">
+          <span class="langButtons">
+
+            <!-- you can use on click on these spans -->
+
+            <span class="selectedLangButton"
+              style="cursor: pointer;padding-top: 13px;display: inline-block;width: 40px;height: 40px;">ENG</span>
+            <span class=""
+              style="cursor: pointer;padding-top: 13px;display: inline-block;width: 40px;height: 40px;">اردو</span>
+          </span>
+          <img src="cw_popup_logo.png" alt="" class="headerLeftImg" />
+          <img src="Zain_Top.png" alt="" class="headerRightImg" />
+        </div>
+
+        <div class="getAccessText">
+          <img style="width: 100%" src="title_illustration.png" />
+          <span class="totalText">
+            <div class="latoHeading">PLAY CRICKET GAMES!</div>
+            <div class="latoHeading1">WATCH HIGHLIGHTS & INTERVIEWS</div>
+          </span>
+
+        </div>
+
+
+
+        <!-- <span class="viralTextClass">Viral Videos &#183; Hightlights &#183; News & Gossips</span> -->
+        <!-- <img src="http://cric.sa.zain.com/digital/assets/assets/slides-cover.png?112312312" alt="" class="main-image-overlay" /> -->
+        <!-- <div class="fadein">
+						<img src="images/1.jpg?12312312">
+						<img src="images/2.jpg?12312312">
+						<img src="images/3.jpg?12312312">
+						<img src="images/4.jpg?12312312">
+					</div> -->
+
+      </div>
+      <!-- <div style="clear:both"></div> -->
+      <div class="contact100-form sub-form-container" ">
+        <!-- <p id=" status" style="color: #fff; font-size: 17px; margin: 14px;opacity: 1;">
+        Please enter your phone number
+        </p> -->
+
+        <div class="wrap-input100 validate-input" data-validate="Number is required" style="line-height: 30px;">
+          <span class="label-input100" id="status">Enter your mobile number</span>
+          <input class="input100" type="text" name="name" id="ph-number" placeholder='9665xxxxxxxxx' value=""
+            autocomplete="off" />
+          <span class="icon-input100-cell"></span>
+
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate="Number is required">
+
+          <select class="selection-2 carrier" id="carrier" name="service" placeholder="">
+            <option value="" disabled> Choose your carrier </option>
+            <option value="zain" selected> Zain </option>
+            <option value="mobily"> Mobily </option>
+            <option value="stc"> STC </option>
+            <option value="virgin"> Virgin </option>
+          </select>
+          <span class="icon-input100-carrier"></span>
+        </div>
+
+        <!-- <div class="wrap-input100 input100-select phone-div" style="display:none;">
+						
+						<div>
+							 <select class="selection-2 carrier" id="carrier" name="service" placeholder="">
+								<option value="" disabled hidden> Choose your carrier </option>
+								<option value="zain" selected> Zain </option>
+							 <option value="mobily"> Mobily </option> 
+								<option value="stc"> STC </option>
+								<option value="virgin"> Virgin </option> 
+							</select>
+						</div>
+						<span class="icon-input100-carrier"></span>
+						 <span class="focus-input100"></span> 
+					</div> -->
+
+
+        <div class="phone-div pin-msgs" style="display:none; background-color:transparent; color:#fff;">
+          <label for="carrier">
+            Please enter the 6 or 8 digit code you receive via SMS.
+            <span class="visible-lg"> | آپکے موبائل نمبر پر ایس ایم ایس کے ذریعے پن کوڈ بھیجا گیا ہے
+            </span>
+          </label>
+          <label class="visible-xs">
+            آپکے موبائل نمبر پر ایس ایم ایس کے ذریعے پن کوڈ بھیجا گیا ہے
+          </label>
+
+        </div>
+
+
+        <div class="container-contact100-form-btn">
+          <div class="wrap-contact100-form-btn">
+            <div class="contact100-form-bgbtn"></div>
+            <button class="contact100-form-btn">
+              <span>
+                CONTINUE
+
+              </span>
+
+              <div class="glare"></div>
+            </button>
+            <div>
+            </div>
+          </div>
+        </div>
+        <p id="msg-success" style="text-align: center; color:#ffff; padding: 5px;">Successfully Subscribed!</p>
+        <p id="msg-error" style="text-align: center;  color:#ffff; padding: 5px;">Something went wrong!</p>
+       
+       
+        <!-- FOOTER -->
+
+       
+      <div style="background-color: #ffffff6e;margin-top: 20px;">   
+      <img src="Logo_Footer.png" alt="" class="footer-new" />
+    </div>
+
+        <div class="disclaimer-text">
+          <p style="color: #252525  ; font-size: 0.9em; text-align: justify;">
+            ZAIN: The service price is 8.25 SAR per week and renewed weekly. To cancel your subscription please send U17
+            to 704421.
+            By subscribing to the service you are accepting all terms and conditions of the service.
+          </p>
+        </div>
+
+      </div>
+
+
+
+      <!-- Modal -->
+      <div id="modalSTC" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+
+            <div class="modal-body" style="padding: 0;">
+              <p>
+                <img src="http://cric.sa.zain.com/digital/assets/jan18/promo/stc_pin.jpg" alt="">
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="close_modal()">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Modal -->
+      <div id="modalZAIN" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+
+            <div class="modal-body">
+              <p>
+                <img src="http://cric.sa.zain.com/digital/assets/jan18/promo/zain_pin.jpg" alt="">
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="close_modal()">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="modalheader" class="modal fade" role="dialog" style="top:20%;">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+
+            <div class="" style="padding-bottom:0">
+              <div onclick="" class="closeButton">
+                Close
+              </div>
+              <ul class="text-center" style="font-size:1.5em;">
+                <!-- <li class="hilight"> Access <span style="text-transform: uppercase;">exclusive</span> </li> -->
+                <li class="livestream">
+
+                  <img src="cw_popup_logo.png" alt="" class="cricwick-logo-live" />
+                  <p
+                    style="max-width: 60%;text-align: center;margin: auto;color: black;font-size: 22px;font-weight: bold; line-height: 10px;">
+                    Access fastest live</p>
+                  <p
+                    style="max-width: 60%;text-align: center;margin: auto;color: black;font-size: 22px;font-weight: bold;">
+                    score updates!</p>
+                </li>
+                <!-- <li class="inmatch"><span style="font-weight: 300;">And</span> Highlights </li> -->
+              </ul>
+
+            </div>
+            <div class="modal-body">
+
+              <!-- <p style="color:black;font-size: 14px; max-width: 75%;text-align: center;margin: auto;margin-bottom: 15px;">Live hd streaming ball by ball updates 4s 6s and wickets. Live match streaming and much more</p> -->
+              <!-- <ul style="color:black;font-size: 16px; max-width: 75%;text-align: center;margin: auto;margin-bottom: 15px;">
+                    <li>Live HD streaming</li>
+                    <li>Ball by ball clips of 4s,6s and wickets</li>
+                    <li>Full match highlights</li>
+                    <li>News and gossips</li>
+                  </ul> -->
+              <div class="container-contact100-form-btn">
+                <div class="wrap-contact100-form-btn">
+                  <div class="contact100-form-bgbtn"></div>
+                  <button class="contact100-form-btn" id="subscribe">
+                    <span style="text-transform: uppercase;">
+                      Subscribe
+
+                    </span>
+
+                    <div class="glare"></div>
+                  </button>
+
+
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <br />
+
+              <ul
+                style="color:black;font-size: 16px; max-width: 100%;text-align: center;margin: auto;margin-bottom: 25px;/*! text-align: center; */">
+                <li
+                  style="margin-bottom: 0.5rem;font-weight: bold;font-size: 12px;font-family: Arial, Helvetica, sans-serif">
+                  Premium Features Include:</li>
+                <li>Live HD streaming</li>
+                <li>Ball by ball clips of 4s,6s and wickets</li>
+                <li>Full match highlights</li>
+                <li>News and gossips</li>
+              </ul>
+
+              <p class="modal_msg text-center" style="margin-top: 10px;color:red; display:none;">Something went wrong!
+                Please try again later.</p>
+            </div>
+            <!-- <div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal"
+									onclick="close_modal()">Close</button>
+              </div> -->
+            <p style="max-width: 75%;text-align: center;margin: auto;margin-bottom: 20px;">ZAIN: The service price is
+              8.25 SAR per week and renewed weekly. To cancel your subscription please send U17 to 704421.
+              By subscribing to the service you are accepting all terms and conditions of the service. </p>
+          </div>
+
+        </div>
+      </div>
+
+      <img src="http://cric.sa.zain.com/digital/assets/jan18/promo/slices/ico-lockpak.png" style="visibility:hidden;"
+        alt="">
+
+      <script src="http://cric.sa.zain.com/digital/assets/jan18/home/js/jquery.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+        // GLOBALS
+        var thephone = "";
+        var task = "phone";
+        var theoperator = '';
+      </script>
+      <script type="text/javascript">
+        function success() {
+          // for already_subscribed
+          $("#msg-success").html("You are already subscribed. Please wait while you are being redirected to Content Portal").show();
+          $(".phone-div, button").hide();
+          if (theoperator == 'mobily') {
+            window.location = "http://cricwick.net/" + "?q=" + thephone + "&oid=103";
+          } else if (theoperator == 'stc') {
+            window.location = "http://cricwick.net/" + "?q=" + thephone + "&oid=104";
+          } else if (theoperator == 'zain') {
+            window.location = "http://cric.sa.zain.com/digital/" + "?q=" + thephone;
+          } else if (theoperator == 'virgin') {
+            window.location = "http://virgin.cricwick.net/" + "?q=" + thephone;
+          }
+        }
+        function success2() {
+          // for new subcribed
+          $("#msg-success").html("Congratulations, you have successfully subscribed. Please wait while you are being redirected to Cotent Portal").show();
+          $(".phone-div, button").hide();
+          if (theoperator == 'mobily') {
+            window.location = "http://cricwick.net/" + "?q=" + thephone + "&oid=103";
+          } else if (theoperator == 'stc') {
+            window.location = "http://cricwick.net/" + "?q=" + thephone + "&oid=104";
+          } else if (theoperator == 'zain') {
+            window.location = "http://cric.sa.zain.com/digital/" + "?q=" + thephone;
+          } else if (theoperator == 'virgin') {
+            window.location = "http://virgin.cricwick.net/" + "?q=" + thephone;
+          }
+
+        }
+        function enablepin() {
+          task = "pin";
+          // $btn.html("Subscribe");
+
+          // // $("#label-input").html("Please enter the pincode sent to you via sms.");
+          // $("#input-eng").html("Enter the Pin Code received via SMS");
+          // $("#input-urdu1").html(" | "+ "  آپکے موبائل پر بھیجا گیا پن کوڈ درج کریں ");
+          // $("#input-urdu2").html("  آپکے موبائل پر بھیجا گیا پن کوڈ درج کریں ");
+          $("#status").html("Enter the Pin Code received in SMS");
+
+          $("#ph-number").val("").attr('placeholder', 'xxxx');
+          // $("#ph-number").siblings('img').attr('src', "http://cric.sa.zain.comassets/jan18/promo/slices/ico-lockpak.png");
+          $("#carrier").prop('disabled', true).closest('div.phone-div').hide();
+          // $(".pin-msgs").show();
+
+        }
+
+        function show_stc() {
+          $("#modalSTC").modal();
+        }
+
+        function show_zain() {
+          $("#modalZAIN").modal();
+        }
+
+        function show_header() {
+          $("#modalheader").modal();
+        }
+        function close_modal() {
+          $('#modalSTC').modal('hide'); // closes all active pop ups.
+          $('#modalZAIN').modal('hide'); // closes all active pop ups.
+          // $('.modal-backdrop').remove();
+          $('body').removeClass('modal-open');
+          $('.modal-backdrop').remove();
+
+        }
+      </script>
+      <script type="text/javascript">
+        $("#subscribe").click(function () {
+          var $input = $("#ph-number");
+          var phone = $input.val();
+          ga('send', 'event', 'HE-Subscribe-Click', ea, phone + " - zain", 1);
+
+          $("#subscribe").html("Please Wait...");
+          $.ajax({
+            method: "GET",
+            url: "http://cric.sa.zain.com" + "promo/submit_zain",
+            dataType: "json",
+            success: function (response) {
+
+              console.log("ateeb", response);
+              if (response.status == 1) {
+                $("#subscribe").html('Success!');
+
+                theoperator = response.operator;
+                thephone = response.phone;
+                $(".modal_msg").html(response.message).show();
+                ga('send', 'event', 'HE-Subscribe-Click-Success', ea, phone + " - zain", 1);
+
+
+                // thephone = phone;
+                success();
+
+              } else {
+                ga('send', 'event', 'HE-Subscribe-Click-Error', ea, phone + " - zain", 1);
+                theoperator = response.operator;
+                thephone = response.phone;
+                //err
+                $("#subscribe").html('Subscribe');
+                $(".modal_msg").html(response.message).show();
+                //   $('#modalheader').modal('hide');
+                // $input.val('Enter your Mobile number');
+              }
+              // $btn.html('Continue');
+              // $btn.removeAttr('disabled');
+            }
+          });
+        });
+      </script>
+      <script type="text/javascript">
+        $(document).ready(function () {
+          $("#msg-error").hide();
+          $("#msg-success").hide();
+          if (already_subscribed == '1') {
+            success();
+            return false;
+          }
+
+          $("#pleasewait").hide();
+          $(".sub-form").show();
+
+
+          $(".sub-form-container button").click(function () {
+            var msisdn = "";
+            $(".modal_msg").hide();
+            if (msisdn) {
+              ga('send', 'event', 'WITH-HE-Continue-Click', ea, msisdn + " - zain", 1);
+
+              show_header();
+              // alert("number found in header");
+              return;
+            } else {
+              ga('send', 'event', 'NO-HE-Continue-Click', ea, msisdn + " - zain", 1);
+
+            }
+
+            var $input = $("#ph-number");
+            var $btn = $(this);
+            $("#msg-error").hide();
+
+
+
+
+            if (task == 'phone') {
+              var p = $input.val();
+
+              if (p.length != 12 && p.length != 10 && p.length != 9 && p.length != 14) {
+                $input.val('').attr("placeholder", "05XXXXXXXX").focus();
+                return false;
+              }
+
+              var phone = $input.val().trim();
+
+
+              if (phone) {
+                operator = $("#carrier").val();
+                ga('send', 'event', 'Continue-Click', ea, phone, 1);
+                $btn.prop('disabled', true);
+                $btn.html('please wait...');
+                $.ajax({
+                  method: "POST",
+                  url: "http://cric.sa.zain.com" + "promo/submit_phone",
+                  data: "phone=" + phone + "&operator=zain",
+                  dataType: "json",
+                  success: function (response) {
+
+                    console.log("ateeb", response);
+                    if (response.status == 1) {
+                      theoperator = response.operator;
+                      thephone = response.phone;
+                      //already subscribed
+
+                      ga('send', 'event', 'Continue-Resp-AS', ea, phone + "+" + response.operator, 1);
+
+                      // thephone = phone;
+                      success();
+
+                    } else if (response.status == 2) {
+                      ga('send', 'event', 'Continue-Resp-PS', ea, phone + "+" + response.operator, 1);
+                      thephone = phone;
+                      theoperator = response.operator;
+                      task = "pin";
+                      enablepin();
+
+
+                    } else {
+                      theoperator = response.operator;
+                      thephone = response.phone;
+                      //err
+                      ga('send', 'event', 'Continue-Resp-Err', ea, phone + "+" + response.operator + ': ' + response.message, 1);
+                      $btn.html('Continue');
+                      $("#msg-error").html(response.message).show();
+                      // $input.val('Enter your Mobile number');
+                    }
+                    $btn.html('Continue');
+                    $btn.removeAttr('disabled');
+                  }
+                });
+
+
+              }
+              return false;
+            }
+
+
+
+            if (task == 'pin') {
+              var pin = $input.val().trim();
+
+              var pattern = /^000+$|^801755$|^704421$|^600159$|^1234+$/;
+
+
+              if (pattern.test(pin) || pin.replace(thephone, false) == 'false' || !pin || pin.length < 4) {
+                if (theoperator == 'zain') {
+                  show_zain();
+                } else {
+                  show_stc();
+                }
+
+                return false;
+              }
+
+
+              if (pin) {
+
+                ga('send', 'event', 'Subscribe-Click', ea, thephone + "+" + theoperator + "+" + pin, 1);
+
+                $btn.prop('disabled', true);
+                $btn.html('please wait...');
+                $.ajax({
+                  method: "POST",
+                  url: "http://cric.sa.zain.com" + "promo/submit_pin",
+                  data: "pin=" + pin,
+                  dataType: "json",
+                  success: function (response) {
+                    console.log(response);
+                    if (response.status == 1) {
+                      console.log("here");
+                      thephone = response.phone;
+                      theoperator = response.operator;
+                      //successfully subscribed
+
+                      // fbq('track', 'Subscribe');
+
+                      ga('send', 'event', 'Subscribe-Resp-Success', ea, thephone + "+" + theoperator + "+" + pin, 1);
+                      success2();
+                      // gtag_report_conversion();
+
+                    } else {
+                      //err
+                      ga('send', 'event', 'Subscribe-Resp-Err', ea, thephone + "+" + theoperator + "+" + pin + ": " + response.message, 1);
+
+                      $btn.html('Subscribe');
+                      $("#msg-error").html(response.message).show();
+                      $input.val('');
+
+                      if (theoperator == 'zain') {
+                        show_zain();
+                      } else {
+                        show_stc();
+                      }
+                    }
+                    $btn.html('Subscribe');
+                    $btn.removeAttr('disabled');
+                  }
+                });
+
+
+              }
+              return false;
+            }
+
+          });
+
+        });
+      </script>
+      <div id="dropDownSelect1"></div>
+
+      <!--===============================================================================================-->
+      <!-- <script src="http://cric.sa.zain.com/digital/assets/promo/new_promo/vendor/jquery/jquery-3.2.1.min.js"></script> -->
+      <!--===============================================================================================-->
+      <script src="http://cric.sa.zain.com/digital/assets/promo/new_promo/vendor/select2/select2.min.js"></script>
+      <script>
+        $(".selection-2").select2({
+          minimumResultsForSearch: 20,
+          dropdownParent: $('#dropDownSelect1')
+        });
+      </script>
+
+      <!--===============================================================================================-->
+      <script src="http://cric.sa.zain.com/digital/assets/promo/new_promo/vendor/owl-carousel/owl.carousel.js"></script>
+      <!-- <script src="http://cric.sa.zain.com/digital/assets/promo/new_promo/js/main.js"></script> -->
+
+
+
+      <script>
+        $(document).ready(function () {
+          $("#owl-demo").owlCarousel({
+
+            autoPlay: 3000,
+
+            items: 5,
+            itemsDesktop: [1199, 5],
+            itemsDesktopSmall: [979, 5]
+
+          });
+          //$(".contact100-form-btn").on(click)
+
+        });
+      </script>
+  
+</html>
